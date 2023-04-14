@@ -41,7 +41,56 @@ p {
     color: white;
 }
 
+.hijos-directos > li {
+    background-color: thistle;
+}
 
+.hijos-descendientes b {
+    background-color: thistle;
+}
+
+/* los selectores de hermanos van a aplicar a los elementos que son hermanos y 
+que esten por debajo de los elementos de referencia*/
+.hermanos-general ~ li {
+    background-color: red;
+}
+    /*se aplica el estilo solamente al hermano que esta debajo pero solo uno */
+.hermanos-adyacentes + li {
+    background-color: thistle;
+   }
+
+/*selectores de atributos*/
+.selectores-atributos a[href] {
+    color: orangered;
+}
+.selectores-atributos a[target="_blank"]{
+    font-weight: bold;
+}
+
+/* el comodin del * aplica al estilo si contiene la palabra en cuestion */
+.selectores-atributos a[href*="jonmircha"]{
+    font-size: 24px;
+}
+
+/*el circunflejo ^ indica que mi estilo se va a aplicar si el inicio del texto es el mismo */
+.selectores-atributos a[href^="https"]{
+    text-decoration: none;
+}
+/*El comodin del $ aplica al estilo si contiene el texto en cuestion*/
+.selectores-atributos a[href$=".com"]{
+    background-color: black;
+}
+ 
+/* el comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista
+separada por espacios*/
+.selectores-atributos a[class~="cursos"]{
+    background-color: steelblue;
+}
+/* el comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista
+separada por espacios y que despues del texto en cuestion venga un guion medio -*/
+.selectores-atributos a[class|="menu"]{
+    font-style: italic;
+}
 /*
 Selectores Basicos
 1) Etiquetas - son elementos html

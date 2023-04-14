@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de CSS</title>
     <link rel="stylesheet" href="css1/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendiendo CSS</h1>
@@ -17,9 +22,9 @@
     </style>
     <h2 id="temario-css">Temario del curso</h2>
     <ul>
-        <li <a href="index.html#selectores-basicos"></a>Selectores basicos</li>
-        <li></li>
-        <li></li>
+        <li> <a href="index.html#selectores-basicos">Selectores basicos</a></li>
+        <li> <a href="index.html#selectores-avanzados">Selectores avanzados</a> </li>
+        <li><a href="index.htm#selectores-atributos">Selectores atributos</a> </li>
         <li></li>
         <li></li>
     </ul>
@@ -31,7 +36,58 @@
         <p id="parrafo-dos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique cumque neque repellat saepe aliquam rem doloremque ducimus corrupti, consequatur consectetur reiciendis hic tempore maiores dicta quasi totam ab asperiores maxime!</p>
         <p class="text-32 bg-skyblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus recusandae rerum nulla incidunt? Architecto dicta temporibus voluptatibus? Accusamus expedita corrupti, minus ab rerum sit voluptatum, inventore assumenda sunt praesentium culpa!</p>
         <p class="text-20 bg-steelblue text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi modi repellendus, dolorum similique temporibus vero quos, eaque velit error quae tenetur dicta quisquam, quas facere? Nostrum enim quam dicta non.</p>
-        <a href="index.html#temario-css">🔼</a>
     </article>
+    <hr>
+    <article id="selectores-avanzados">
+        <h2>Selectores avanzados</h2>
+        <h3>Selectores de hijos</h3>
+        <h4>Selector de hijos directos</h4>
+        <ul class="hijos-directos">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h4>Selector de hijos desendientes</h4>
+        <ul class="hijos-descendientes">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h3>
+            selector de hermanos
+        </h3>
+        <h4>selector de hermanos (en general)</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-general"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h4>selector de hermanos adyacente</h4>
+        <h4>selector de hermanos (en general)</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-adyacentes"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+    </article>
+    <hr>
+    <h3>Selectores de atributos </h3>
+    <nav class="selectores-atributos">
+        <ul>
+            <li><a href="https://jonmircha.com" target="_blank">inicio</a></li>
+            <li><a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+            <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+            <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+            <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+            <li><a class="menu-item notas button" href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+            <li><a href="index.html#temario-css">Regresar al inicio</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="index.html#temario-css">🔼</a>
 </body>
 </html>
