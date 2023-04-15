@@ -91,6 +91,148 @@ separada por espacios y que despues del texto en cuestion venga un guion medio -
 .selectores-atributos a[class|="menu"]{
     font-style: italic;
 }
+
+/* selector universal */
+
+* {
+    font-family: Georgia;
+}
+
+.selector-universal * {
+    font-size: 24px;
+
+}
+
+.form-pseudoclases *:required{
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid { 
+    border-color: red;
+}
+
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color: pink;
+}
+
+.menu-pseudoclases a:hover {
+    color: orange;
+}
+
+.menu-pseudoclases a:visited { 
+    color: olive;
+}
+
+.p-pseudoclases:hover {
+    font-size: 20px;
+}
+
+#temario-css:target {
+    background-color: lightgreen;
+}
+
+.lista-pseudoclases li:first-child {
+    color: green;
+}
+
+.lista-pseudoclases li:last-child {
+    color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+    color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+    font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+    font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even) {
+    background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+    background-color: orange;
+}
+
+.articulo-pseudoclases p:first-of-type {
+    background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type {
+    background-color: violet;
+}
+
+.articulo-pseudoclases p:nth-of-type(2) {
+    background-color: fuchsia;
+}
+
+.articulo-pseudoclases *:not(p) {
+    background-color: beige;
+}
+
+.saga-geminis::before {
+    content: "😃";
+}
+
+.saga-geminis::after {
+    content: "🎨";
+}
+
+.saga-precio::before {
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after {
+    content: "usd";
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::first-line {
+    color:coral;
+}
+
+.p-pseudoelementos::selection {
+    color: greenyellow;
+    background-color: black;
+}
+
+.input-pseudoelementos::placeholder {
+    color: green;
+}
+
+/* Agrupar selectores*/
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores textarea{
+    border-color: yellow;
+    background-color: black;
+    border-style: dashed;
+    border-width: 2px;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
+
+
 /*
 Selectores Basicos
 1) Etiquetas - son elementos html
