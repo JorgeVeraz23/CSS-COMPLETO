@@ -1,0 +1,79 @@
+.color-by-name {
+    background-color: coral;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+}
+
+/*
+    Sistema Hexadecimal DE 16 DIGITOS
+    0123456789ABCDEF
+
+    RGB - RedGreenBlue (Medios Digitales) vs  CMYK - CyanMagentaYellowKey (Medios Impresos)
+
+    Colores en Hex van a ser colores de 6 digitos
+    #FF6600
+
+    */
+
+.color-ex {
+    background-color: #ff6600;
+    background-color: #ff60;
+    background-color: #ff6605;
+    background-color: #00000099; /*los dos digitos despues del sexto digito indican opacidad*/
+    color: #12ac68;
+    border: thick solid #ffffff;
+    border: thick solid #ff0000;
+    border: thick solid #000000;
+    border: thick solid #00ff00;
+}
+
+/*sistema RGB
+    Acepta 8 bits por canal 
+    Bits (0/1) 2 elevado a la 8 = 256
+    Por cada canal de color tenemos valores que van del 0 al 255
+*/
+
+.color-RGB {
+    background-color: rgb(255,255,255);
+    background-color: rgb(255,0,0);
+    background-color: rgb(0,255,0);
+    background-color: rgb(0, 0, 255);
+    background-color: rgba(0, 0, 0, 0.92); /*rgba es para agregar opacidad*/
+    color: rgb(255, 102, 0);
+    border: thick solid rgb(128, 109, 7);
+}
+
+/*
+
+    Sistema HSL 
+
+HueSaturationLightness (Tono-Saturacion-Luminosidad)
+    El primer valor es Hue (Circulo Cromatico)
+    0 - > red
+    60 - > yellow
+    120 - > verde
+    180 - > cyan
+    240 - > azul
+    300 - > magenta
+
+    el segundo valor es la saturacion(Intensidad del color)
+    0% -> Escala de grises
+    100% -> Color puro
+
+    El tercer valor es Lightness (Luminosidad del color)
+    0% -> negro
+    50% -> color puro
+    100% - > blanco
+    */
+
+.color-hsl {
+    background-color: hsl(240, 100%, 50%);
+    background-color: hsla(240, 100%, 50%, 0.5);
+    color: rebeccapurple;
+    border: thin solid greenyellow;
+}
+
+
+
+
+
