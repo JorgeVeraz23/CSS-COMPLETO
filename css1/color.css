@@ -73,7 +73,40 @@ HueSaturationLightness (Tono-Saturacion-Luminosidad)
     border: thin solid greenyellow;
 }
 
+/*
+Valor transparent: color transparente es igual a aplicar rgba(0,0,0,0)
+valor currentColor: hereda el valor por defecto o asignado de la propiedad color, del 
+ancestro que tenga definida esta propiedad, busca del ancestro mas cercano al mass alejado
 
+*/
+
+.color-transparent-current {
+    background-color: darkmagenta;
+    background-color: currentColor; /*pone todo negro*/
+    background-color: transparent; /*pone todo sin color*/
+    /*color: orangered;*/
+    color: olive;
+    border: thick solid currentColor;
+}
+
+.opacity {
+    background-color: orchid;
+    color: navy;
+    border: thick solid black;
+    opacity: .5; /*aplica la opacidad a las 3 propiedades*/
+}
+
+.opacity-00 {
+    opacity: 0;
+}
+
+.opacity-10 {
+    opacity: .1;
+}
+
+.opacity-20 {
+    opacity: .2;
+}
 
 
 
