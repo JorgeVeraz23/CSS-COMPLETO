@@ -1,0 +1,90 @@
+/*
+Estilos de la fuente
+font-family : define el tipo de letra
+font-size : define el tamaño de la fuente
+font-weight : se utiliza para establecer el grosor o la negrita del texto
+font-style : define el estilo de fuente ej: "italic" = cursiva, "oblique "inclinada", "inherit" heredado de un elemento padre
+font-variant : define la variante de la fuente, normal, todo a mayusculas etc
+font : propiedad de shorthand
+
+*/
+
+.font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 2;/*para el interlineado*/
+
+    font: italic small-caps bold 24px / 1.5 monospace;
+}
+
+@font-face {
+    /*
+    font-family: "Chalet";
+    src: url("../assets/Chalet.woff") format("woff"), url("../assets/Chalet.woff") format("woff");*/
+    font-family: "Chalet";
+    src: url("../assets/Chalet.woff") format("woff");
+    font-display: swap;
+}
+
+.chalet {
+    font-family: "Chalet", sans-serif;
+}
+
+@font-face {
+    font-family: "Pecita";
+    src: url("../assets/Pecita.woff") format("woff");
+    font-display: swap;
+}
+
+.pecita {
+    font-family: "Pecita", cursive;
+}
+
+/*
+auto - permite que el navegador utilice el metodo predeterminado que suele ser block
+block - oculta brevemente el texto hasta que la fuente haya sido descargada por completo
+swap - indica el navegador que utilice la fuente alternativa para mostrar el texto
+hasta que la fuente personalizada se haya cargado por completo
+fallback - es una mezcla de auto y swap
+optional - ocultara el texto, luego lo cargara con la fuente alternativa y finalmente
+aplicara la fuente personalizada
+*/
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+/*
+text-align : 
+text-decoration: 
+text-indent: 
+text-overflow: 
+text-transform: 
+letter-spacing: 
+*/
+
+.text {
+    background-color: red;
+    color: blue;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    text-decoration: overline; /*subraya */
+    text-indent: 3rem;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

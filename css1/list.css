@@ -1,0 +1,41 @@
+.list {
+    list-style-type: square;
+    list-style-type: disc;
+    list-style-type: circle;
+    list-style-type: lower-roman;
+    list-style-type: decimal-leading-zero;
+    list-style-image: url("../assets/cielo.png");
+    list-style-image: none;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list li::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    list-style-type: none;
+    background-image: url("../assets/favicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-2 li{
+    background-color: coral;
+    list-style-position: inside;
+    list-style-position: inside;
+}
+
+.list-3 {
+    background-color: cornsilk;
+    list-style: lower-latin inside;
+}
+
+.list-3 {
+    background-color: antiquewhite;
+    list-style: lower-alpha;
+}

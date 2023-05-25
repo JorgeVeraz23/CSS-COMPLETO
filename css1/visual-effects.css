@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.box {
+    border: thick solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 3rem;
+}
+
+.shadows {
+    color: navy;
+    font-size: 2rem;
+    text-align: center;
+    /*box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset*/
+    box-shadow: 1rem 1rem 1rem 1rem;
+    box-shadow: -1rem -1rem 1rem 1rem;
+    box-shadow: 1rem 1rem 1rem 1rem #0005;
+    box-shadow: 1rem 1rem 1rem 1rem #f005;
+    text-shadow: -1rem -1rem 0rem hotpink;
+}
+
+.shadows-multiple{
+    box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #f00 inset,
+    -1rem 0.5rem 2rem hotpink;
+    text-shadow: -1rem -1rem 0rem hotpink, 1rem 1rem 0rem greenyellow;
+}
+
+.drop-shadows{
+    width: 600px;
+    height: auto;
+}
+
+.drop-shadows img {
+    max-width: 100%;
+    max-height: auto;
+    /*filter: drop-shadow(mov-x mov-y blur-radius color);*/
+    filter: drop-shadow(1rem 1rem 1rem yellow);
+    box-shadow: 1rem 1rem 1rem 1rem #f00;
+}
+
+
+
